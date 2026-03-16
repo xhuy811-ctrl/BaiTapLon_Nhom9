@@ -36,6 +36,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -59,7 +60,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.8209F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(316, 140);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(164, 29);
+            this.label2.Size = new System.Drawing.Size(136, 25);
             this.label2.TabIndex = 2;
             this.label2.Text = "Tên tài khoản ";
             // 
@@ -70,7 +71,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.8209F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(363, 194);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(109, 29);
+            this.label3.Size = new System.Drawing.Size(93, 25);
             this.label3.TabIndex = 3;
             this.label3.Text = "Mật khẩu";
             // 
@@ -119,15 +120,25 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.79104F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(240, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(274, 55);
+            this.label1.Size = new System.Drawing.Size(243, 51);
             this.label1.TabIndex = 9;
             this.label1.Text = "Đăng nhập ";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(368, 376);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(135, 23);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "Xhuy ngu vcl";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // frmDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(754, 448);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtMatKhau);
@@ -155,6 +166,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
