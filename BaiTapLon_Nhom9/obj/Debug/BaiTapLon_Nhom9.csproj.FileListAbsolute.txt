@@ -1,0 +1,10 @@
+E:\Visualstudio\BaiTapLon_Nhom9\bin\Debug\BaiTapLon_Nhom9.exe.config
+E:\Visualstudio\BaiTapLon_Nhom9\bin\Debug\BaiTapLon_Nhom9.exe
+E:\Visualstudio\BaiTapLon_Nhom9\bin\Debug\BaiTapLon_Nhom9.pdb
+E:\Visualstudio\BaiTapLon_Nhom9\obj\Debug\BaiTapLon_Nhom9.csproj.AssemblyReference.cache
+E:\Visualstudio\BaiTapLon_Nhom9\obj\Debug\BaiTapLon_Nhom9.frmDangNhap.resources
+E:\Visualstudio\BaiTapLon_Nhom9\obj\Debug\BaiTapLon_Nhom9.Properties.Resources.resources
+E:\Visualstudio\BaiTapLon_Nhom9\obj\Debug\BaiTapLon_Nhom9.csproj.GenerateResource.cache
+E:\Visualstudio\BaiTapLon_Nhom9\obj\Debug\BaiTapLon_Nhom9.csproj.CoreCompileInputs.cache
+E:\Visualstudio\BaiTapLon_Nhom9\obj\Debug\BaiTapLon_Nhom9.exe
+E:\Visualstudio\BaiTapLon_Nhom9\obj\Debug\BaiTapLon_Nhom9.pdb
