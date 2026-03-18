@@ -39,9 +39,7 @@
             this.cboSoChoTrong = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.cboLoaiPhong = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.cboTinhTrang = new System.Windows.Forms.ComboBox();
             this.cboDonGia = new System.Windows.Forms.ComboBox();
             this.cboTang = new System.Windows.Forms.ComboBox();
             this.cboMaPhong = new System.Windows.Forms.ComboBox();
@@ -162,9 +160,7 @@
             this.groupBox1.Controls.Add(this.cboSoChoTrong);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.cboLoaiPhong);
-            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.cboTinhTrang);
             this.groupBox1.Controls.Add(this.cboDonGia);
             this.groupBox1.Controls.Add(this.cboTang);
             this.groupBox1.Controls.Add(this.cboMaPhong);
@@ -193,7 +189,7 @@
             "6",
             "7",
             "8"});
-            this.cboSoChoTrong.Location = new System.Drawing.Point(576, 104);
+            this.cboSoChoTrong.Location = new System.Drawing.Point(576, 69);
             this.cboSoChoTrong.Name = "cboSoChoTrong";
             this.cboSoChoTrong.Size = new System.Drawing.Size(204, 28);
             this.cboSoChoTrong.TabIndex = 14;
@@ -202,7 +198,7 @@
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(460, 104);
+            this.label4.Location = new System.Drawing.Point(460, 69);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(104, 20);
             this.label4.TabIndex = 13;
@@ -220,16 +216,6 @@
             this.cboLoaiPhong.Size = new System.Drawing.Size(204, 28);
             this.cboLoaiPhong.TabIndex = 12;
             // 
-            // label7
-            // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(460, 61);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(84, 20);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Tình trạng";
-            // 
             // label6
             // 
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -239,19 +225,6 @@
             this.label6.Size = new System.Drawing.Size(91, 20);
             this.label6.TabIndex = 10;
             this.label6.Text = "Loại phòng";
-            // 
-            // cboTinhTrang
-            // 
-            this.cboTinhTrang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cboTinhTrang.FormattingEnabled = true;
-            this.cboTinhTrang.Items.AddRange(new object[] {
-            "Đang trống",
-            "Đầy",
-            "Đang sửa chữa"});
-            this.cboTinhTrang.Location = new System.Drawing.Point(576, 57);
-            this.cboTinhTrang.Name = "cboTinhTrang";
-            this.cboTinhTrang.Size = new System.Drawing.Size(204, 28);
-            this.cboTinhTrang.TabIndex = 9;
             // 
             // cboDonGia
             // 
@@ -449,9 +422,7 @@
         private System.Windows.Forms.ComboBox cboSoChoTrong;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cboLoaiPhong;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox cboTinhTrang;
         private System.Windows.Forms.ComboBox cboDonGia;
         private System.Windows.Forms.ComboBox cboTang;
         private System.Windows.Forms.ComboBox cboMaPhong;
