@@ -10,3 +10,16 @@ E:\Visualstudio\BaiTapLon_Nhom9\obj\Debug\BaiTapLon_Nhom9.exe
 E:\Visualstudio\BaiTapLon_Nhom9\obj\Debug\BaiTapLon_Nhom9.pdb
 E:\Visualstudio\BaiTapLon_Nhom9\obj\Debug\BaiTapLon_Nhom9.frmQuanLy.resources
 E:\Visualstudio\BaiTapLon_Nhom9\obj\Debug\BaiTapLon_Nhom9.frmThemHopDong.resources
+E:\baitapnhom9\bin\Debug\BaiTapLon_Nhom9.exe.config
+E:\baitapnhom9\bin\Debug\BaiTapLon_Nhom9.exe
+E:\baitapnhom9\bin\Debug\BaiTapLon_Nhom9.pdb
+E:\baitapnhom9\obj\Debug\BaiTapLon_Nhom9.csproj.AssemblyReference.cache
+E:\baitapnhom9\obj\Debug\BaiTapLon_Nhom9.frmDangNhap.resources
+E:\baitapnhom9\obj\Debug\BaiTapLon_Nhom9.frmQuanLy.resources
+E:\baitapnhom9\obj\Debug\BaiTapLon_Nhom9.frmThemHopDong.resources
+E:\baitapnhom9\obj\Debug\BaiTapLon_Nhom9.Properties.Resources.resources
+E:\baitapnhom9\obj\Debug\BaiTapLon_Nhom9.csproj.GenerateResource.cache
+E:\baitapnhom9\obj\Debug\BaiTapLon_Nhom9.csproj.CoreCompileInputs.cache
+E:\baitapnhom9\obj\Debug\BaiTapLon_Nhom9.exe
+E:\baitapnhom9\obj\Debug\BaiTapLon_Nhom9.pdb
+E:\baitapnhom9\obj\Debug\BaiTapLon_Nhom9.Form4.resources

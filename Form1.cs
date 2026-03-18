@@ -22,7 +22,7 @@ namespace BaiTapLon_Nhom9
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txtTenTaiKhoan.Text == "Nguyễn Xuân Huy" && txtMatKhau.Text == "huydeptraivl")
+            if (txtTenTaiKhoan.Text == "123" && txtMatKhau.Text == "123")
             {
                 frmQuanLy f = new frmQuanLy();
                 f.Show();
