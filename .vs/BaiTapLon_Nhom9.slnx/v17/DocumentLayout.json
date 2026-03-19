@@ -3,15 +3,19 @@
   "WorkspaceRootPath": "D:\\btlon\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{85907C23-B71F-4896-BCB7-7F5D3B14EFAF}|BaiTapLon_Nhom9.csproj|d:\\btlon\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85907C23-B71F-4896-BCB7-7F5D3B14EFAF}|BaiTapLon_Nhom9.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{85907C23-B71F-4896-BCB7-7F5D3B14EFAF}|BaiTapLon_Nhom9.csproj|d:\\btlon\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{85907C23-B71F-4896-BCB7-7F5D3B14EFAF}|BaiTapLon_Nhom9.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{85907C23-B71F-4896-BCB7-7F5D3B14EFAF}|BaiTapLon_Nhom9.csproj|d:\\btlon\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{85907C23-B71F-4896-BCB7-7F5D3B14EFAF}|BaiTapLon_Nhom9.csproj|D:\\btlon\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{85907C23-B71F-4896-BCB7-7F5D3B14EFAF}|BaiTapLon_Nhom9.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{85907C23-B71F-4896-BCB7-7F5D3B14EFAF}|BaiTapLon_Nhom9.csproj|d:\\btlon\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{85907C23-B71F-4896-BCB7-7F5D3B14EFAF}|BaiTapLon_Nhom9.csproj|D:\\btlon\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{85907C23-B71F-4896-BCB7-7F5D3B14EFAF}|BaiTapLon_Nhom9.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -35,18 +39,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "D:\\btlon\\Form2.cs",
+              "RelativeDocumentMoniker": "Form2.cs",
+              "ToolTip": "D:\\btlon\\Form2.cs*",
+              "RelativeToolTip": "Form2.cs*",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAiwEEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T08:32:14.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Form2.cs [Design]",
               "DocumentMoniker": "D:\\btlon\\Form2.cs",
               "RelativeDocumentMoniker": "Form2.cs",
-              "ToolTip": "D:\\btlon\\Form2.cs [Design]",
-              "RelativeToolTip": "Form2.cs [Design]",
+              "ToolTip": "D:\\btlon\\Form2.cs [Design]*",
+              "RelativeToolTip": "Form2.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-19T08:04:22.108Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form3.cs [Design]",
               "DocumentMoniker": "D:\\btlon\\Form3.cs",
               "RelativeDocumentMoniker": "Form3.cs",
@@ -58,15 +75,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\btlon\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "D:\\btlon\\Form1.cs [Design]",
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T08:04:19.98Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-03-19T08:04:19.98Z"
             }
           ]
         }
