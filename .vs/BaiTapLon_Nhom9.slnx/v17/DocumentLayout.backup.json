@@ -44,7 +44,7 @@
               "RelativeDocumentMoniker": "Form2.cs",
               "ToolTip": "D:\\btlon\\Form2.cs*",
               "RelativeToolTip": "Form2.cs*",
-              "ViewState": "AgIAABYAAAAAAAAAAAD4vysAAABUAAAAAAAAAA==",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAiwHEAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-19T08:32:14.161Z",
               "EditorCaption": ""
@@ -70,7 +70,8 @@
               "ToolTip": "D:\\btlon\\Form3.cs [Design]",
               "RelativeToolTip": "Form3.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T08:04:21.108Z"
+              "WhenOpened": "2026-03-19T08:04:21.108Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
