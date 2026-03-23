@@ -158,5 +158,41 @@ namespace BaiTapLon_Nhom9
         {
 
         }
+
+        private void btnThem1_Click(object sender, EventArgs e)
+        {
+            Themhoadon f = new Themhoadon();
+            if(f.ShowDialog() == DialogResult.OK)
+            {
+                dgvHoaDon.Rows.Add(f.maHoaDon,f.MaSV,f.HoTen,f.Phong,f.Toa,f.Ngay.ToString("dd/MM/yyyy"),f.ThanhTien,f.TrangThai,f.NgayLap.ToString("dd/MM/yyyy"),f.NguoiLap);
+            }
+            
+    }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (dgvHoaDon.SelectedRows.Count > 0) // kiểm tra có dòng được chọn
+            {
+                DialogResult result = MessageBox.Show(
+                "Bạn có chắc chắn muốn xóa dòng này?",
+                "Xác nhận xóa",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+                foreach (DataGridViewRow row in dgvHoaDon.SelectedRows)
+                {
+                    if (!row.IsNewRow) // không xóa dòng mới (dòng thêm)
+                        dgvHoaDon.Rows.Remove(row);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn dòng cần xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
     }
 }
