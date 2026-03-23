@@ -76,36 +76,24 @@ namespace BaiTapLon_Nhom9
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            if (dgvDanhSachPhong.Rows.Count == 1)
+            if (dgvDanhSachPhong.CurrentRow != null && !dgvDanhSachPhong.CurrentRow.IsNewRow)
             {
-                MessageBox.Show("Chưa có dữ liệu trong bảng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return; // Dừng hàm tại đây, không chạy các lệnh bên dưới nữa
-            }
-            // 1. Kiểm tra xem người dùng đã chọn dòng nào chưa
-            if (dgvDanhSachPhong.CurrentRow != null)
-            {
-                // 2. Hiện hộp thoại hỏi lại cho chắc chắn (Tránh bấm nhầm)
                 DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa phòng này không?",
-                                                    "Xác nhận xóa",
-                                                    MessageBoxButtons.YesNo,
-                                                    MessageBoxIcon.Warning);
+                    "Xác nhận xóa",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Warning);
 
                 if (result == DialogResult.Yes)
                 {
-                    // 3. Lấy chỉ số (index) của dòng đang chọn
                     int index = dgvDanhSachPhong.CurrentRow.Index;
-
-                    // 4. Thực hiện lệnh xóa dòng tại vị trí index đó
                     dgvDanhSachPhong.Rows.RemoveAt(index);
 
-                    MessageBox.Show("Đã xóa phòng thành công!", "Thông báo");
-
-                    
+                    MessageBox.Show("Đã xóa phòng thành công!");
                 }
             }
             else
             {
-                MessageBox.Show("Vui lòng chọn một dòng trong bảng để xóa!", "Thông báo");
+                MessageBox.Show("Vui lòng chọn một dòng hợp lệ để xóa!", "Thông báo");
             }
         }
 
