@@ -63,12 +63,6 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form4.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,14 +71,46 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QUANLYHOPDONGKTXDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QUANLYHOPDONGKTXDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QUANLYHOPDONGKTXDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QUANLYHOPDONGKTXDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QUANLYHOPDONGKTXDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QUANLYHOPDONGKTXDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QUANLYHOPDONGKTXDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QUANLYHOPDONGKTXDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QUANLYHOPDONGKTXDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QUANLYHOPDONGKTXDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QUANLYHOPDONGKTXDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QUANLYHOPDONGKTXDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QUANLYHOPDONGKTXDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QUANLYHOPDONGKTXDataSet6.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form4.resx">
       <DependentUpon>Form4.cs</DependentUpon>
@@ -113,6 +139,83 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="QUANLYHOPDONGKTXDataSet.xsc">
+      <DependentUpon>QUANLYHOPDONGKTXDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QUANLYHOPDONGKTXDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QUANLYHOPDONGKTXDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QUANLYHOPDONGKTXDataSet.xss">
+      <DependentUpon>QUANLYHOPDONGKTXDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QUANLYHOPDONGKTXDataSet1.xsc">
+      <DependentUpon>QUANLYHOPDONGKTXDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QUANLYHOPDONGKTXDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QUANLYHOPDONGKTXDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QUANLYHOPDONGKTXDataSet1.xss">
+      <DependentUpon>QUANLYHOPDONGKTXDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QUANLYHOPDONGKTXDataSet2.xsc">
+      <DependentUpon>QUANLYHOPDONGKTXDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QUANLYHOPDONGKTXDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QUANLYHOPDONGKTXDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QUANLYHOPDONGKTXDataSet2.xss">
+      <DependentUpon>QUANLYHOPDONGKTXDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QUANLYHOPDONGKTXDataSet3.xsc">
+      <DependentUpon>QUANLYHOPDONGKTXDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QUANLYHOPDONGKTXDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QUANLYHOPDONGKTXDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QUANLYHOPDONGKTXDataSet3.xss">
+      <DependentUpon>QUANLYHOPDONGKTXDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QUANLYHOPDONGKTXDataSet4.xsc">
+      <DependentUpon>QUANLYHOPDONGKTXDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="QUANLYHOPDONGKTXDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QUANLYHOPDONGKTXDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QUANLYHOPDONGKTXDataSet4.xss">
+      <DependentUpon>QUANLYHOPDONGKTXDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="QUANLYHOPDONGKTXDataSet5.xsc">
+      <DependentUpon>QUANLYHOPDONGKTXDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="QUANLYHOPDONGKTXDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QUANLYHOPDONGKTXDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QUANLYHOPDONGKTXDataSet5.xss">
+      <DependentUpon>QUANLYHOPDONGKTXDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="QUANLYHOPDONGKTXDataSet6.xsc">
+      <DependentUpon>QUANLYHOPDONGKTXDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="QUANLYHOPDONGKTXDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QUANLYHOPDONGKTXDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QUANLYHOPDONGKTXDataSet6.xss">
+      <DependentUpon>QUANLYHOPDONGKTXDataSet6.xsd</DependentUpon>
+    </None>
     <None Include="Resources\5ee082781b8c41406a2a50a0f32d6aa6.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
