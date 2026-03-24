@@ -1107,10 +1107,11 @@
             // 
             this.cboMaPhong.FormattingEnabled = true;
             this.cboMaPhong.Items.AddRange(new object[] {
-            "KTA",
-            "KT2",
-            "KTX",
-            "KTC"});
+            "101",
+            "102",
+            "103",
+            "104",
+            "105"});
             this.cboMaPhong.Location = new System.Drawing.Point(104, 18);
             this.cboMaPhong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboMaPhong.Name = "cboMaPhong";
