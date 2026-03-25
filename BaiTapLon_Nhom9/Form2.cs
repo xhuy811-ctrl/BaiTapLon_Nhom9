@@ -225,8 +225,15 @@ namespace BaiTapLon_Nhom9
 
         private void btThemhd_Click(object sender, EventArgs e)
         {
-            frmThemHopDong f = new frmThemHopDong();
-            f.ShowDialog();
+            dgvHopDong.Rows.Add(
+       txtMaHD.Text,
+       txtTenSV.Text,
+       txtMaSV.Text,
+       dtpNgayLaphd.Value.ToShortDateString(),
+       dtpNgayHan.Value.ToShortDateString(),
+       dtpNgaySinh.Value.ToShortDateString(),
+       cbGioiTinh.Text,
+       txtSoPhonghd.Text);
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -380,6 +387,56 @@ namespace BaiTapLon_Nhom9
             else
             {
                 MessageBox.Show("Vui lòng chọn dòng cần xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btSuahd_Click(object sender, EventArgs e)
+        {
+            if (dgvHopDong.CurrentRow == null)
+            {
+                MessageBox.Show("Chọn dòng cần sửa!");
+                return;
+            }
+
+            int i = dgvHopDong.CurrentRow.Index;
+
+            dgvHopDong.Rows[i].Cells[0].Value = txtMaHD.Text;
+            dgvHopDong.Rows[i].Cells[1].Value = txtTenSV.Text;
+            dgvHopDong.Rows[i].Cells[2].Value = txtMaSV.Text;
+            dgvHopDong.Rows[i].Cells[3].Value = dtpNgayLaphd.Value.ToShortDateString();
+            dgvHopDong.Rows[i].Cells[4].Value = dtpNgayHan.Value.ToShortDateString();
+            dgvHopDong.Rows[i].Cells[5].Value = dtpNgaySinh.Value.ToShortDateString();
+            dgvHopDong.Rows[i].Cells[6].Value = cbGioiTinh.Text;
+            dgvHopDong.Rows[i].Cells[7].Value = txtSoPhonghd.Text;
+
+            MessageBox.Show("Sửa thành công!");
+        }
+
+        private void btXoahd_Click(object sender, EventArgs e)
+        {
+            if (dgvHopDong.CurrentRow != null)
+            {
+                DialogResult rs = MessageBox.Show(
+                    "Bạn có chắc muốn xóa dòng này?",
+                    "Xác nhận",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Warning
+                );
+
+                if (rs == DialogResult.Yes)
+                {
+                    dgvHopDong.Rows.Remove(dgvHopDong.CurrentRow);
+                    MessageBox.Show("Xóa thành công!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Chọn dòng cần xóa!");
             }
         }
     }
