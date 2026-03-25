@@ -450,5 +450,127 @@ namespace BaiTapLon_Nhom9
         {
             MessageBox.Show("In hóa đơn thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnThemdn_Click(object sender, EventArgs e)
+        {
+            // 1. Kiểm tra rỗng
+            if (string.IsNullOrEmpty(cboMaPhong1    .Text) ||
+                string.IsNullOrEmpty(txtThang.Text) ||
+                string.IsNullOrEmpty(txtDienCu.Text) ||
+                string.IsNullOrEmpty(txtDienMoi.Text) ||
+                string.IsNullOrEmpty(txtNuocCu.Text) ||
+                string.IsNullOrEmpty(txtNuocMoi.Text))
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
+                return;
+            }
+            // 2. Parse dữ liệu
+
+            int dienCu = int.Parse(txtDienCu.Text);
+            int dienMoi = int.Parse(txtDienMoi.Text);
+            int nuocCu = int.Parse(txtNuocCu.Text);
+            int nuocMoi = int.Parse(txtNuocMoi.Text);
+
+            // 3. Tính tiền (ví dụ)
+            int tienDien = (dienMoi - dienCu) * 3000;
+            int tienNuoc = (nuocMoi - nuocCu) * 10000;
+            int tongTien = tienDien + tienNuoc;
+
+            // 4. Thêm vào DataGridView
+            dgvDienNuoc.Rows.Add(
+                cboMaPhong1.Text,
+                txtThang.Text,
+                dienCu,
+                dienMoi,
+                nuocCu,
+                nuocMoi,
+                tongTien
+            );
+
+            // 5. Clear input (tuỳ chọn)
+            txtThang.Clear();
+            txtDienCu.Clear();
+            txtDienMoi.Clear();
+            txtNuocCu.Clear();
+            txtNuocMoi.Clear();
+        }
+
+        private void btnSuadn_Click(object sender, EventArgs e)
+        {
+            // 1. Kiểm tra có chọn dòng chưa
+            if (dgvDienNuoc.CurrentRow == null)
+            {
+                MessageBox.Show("Vui lòng chọn dòng cần sửa!");
+                return;
+            }
+
+            // 2. Kiểm tra rỗng
+            if (string.IsNullOrEmpty(cboMaPhong1.Text) ||
+                string.IsNullOrEmpty(txtThang.Text) ||
+                string.IsNullOrEmpty(txtDienCu.Text) ||
+                string.IsNullOrEmpty(txtDienMoi.Text) ||
+                string.IsNullOrEmpty(txtNuocCu.Text) ||
+                string.IsNullOrEmpty(txtNuocMoi.Text))
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
+                return;
+            }
+
+            // 3. Parse dữ liệu
+            int dienCu = int.Parse(txtDienCu.Text);
+            int dienMoi = int.Parse(txtDienMoi.Text);
+            int nuocCu = int.Parse(txtNuocCu.Text);
+            int nuocMoi = int.Parse(txtNuocMoi.Text);
+
+            // 4. Tính lại tiền
+            int tienDien = (dienMoi - dienCu) * 3000;
+            int tienNuoc = (nuocMoi - nuocCu) * 10000;
+            int tongTien = tienDien + tienNuoc;
+
+            // 5. Lấy dòng đang chọn
+            DataGridViewRow row = dgvDienNuoc.CurrentRow;
+
+            // 6. Gán lại dữ liệu
+            row.Cells[0].Value = cboMaPhong.Text;
+            row.Cells[1].Value = txtThang.Text;
+            row.Cells[2].Value = dienCu;
+            row.Cells[3].Value = dienMoi;
+            row.Cells[4].Value = nuocCu;
+            row.Cells[5].Value = nuocMoi;
+            row.Cells[6].Value = tongTien;
+
+            MessageBox.Show("Sửa thành công!");
+        }
+
+        private void btnXoadn_Click(object sender, EventArgs e)
+        {
+            // 1. Kiểm tra có chọn dòng chưa
+            if (dgvDienNuoc.CurrentRow == null)
+            {
+                MessageBox.Show("Vui lòng chọn dòng cần xóa!");
+                return;
+            }
+
+            // 2. Xác nhận xóa
+            DialogResult result = MessageBox.Show(
+                "Bạn có chắc muốn xóa dòng này?",
+                "Xác nhận",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning
+            );
+
+            if (result == DialogResult.No)
+                return;
+
+            // 3. Xóa dòng
+            dgvDienNuoc.Rows.Remove(dgvDienNuoc.CurrentRow);
+
+            MessageBox.Show("Xóa thành công!");
+        }
     }
 }
