@@ -228,12 +228,15 @@ namespace BaiTapLon_Nhom9
             dgvHopDong.Rows.Add(
        txtMaHD.Text,
        txtTenSV.Text,
-       txtMaSV.Text,
-       dtpNgayLaphd.Value.ToShortDateString(),
-       dtpNgayHan.Value.ToShortDateString(),
+       
+       
+       
        dtpNgaySinh.Value.ToShortDateString(),
        cbGioiTinh.Text,
-       txtSoPhonghd.Text);
+       txtMaSV.Text,
+       txtSoPhonghd.Text,
+            dtpNgayLaphd.Value.ToShortDateString(),
+            dtpNgayHan.Value.ToShortDateString());
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -378,10 +381,13 @@ namespace BaiTapLon_Nhom9
                 "Xác nhận xóa",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question);
-                foreach (DataGridViewRow row in dgvHoaDon.SelectedRows)
+                if (result == DialogResult.Yes)
                 {
-                    if (!row.IsNewRow) // không xóa dòng mới (dòng thêm)
-                        dgvHoaDon.Rows.Remove(row);
+                    foreach (DataGridViewRow row in dgvHoaDon.SelectedRows)
+                    {
+                        if (!row.IsNewRow) // không xóa dòng mới (dòng thêm)
+                            dgvHoaDon.Rows.Remove(row);
+                    }
                 }
             }
             else
@@ -438,6 +444,11 @@ namespace BaiTapLon_Nhom9
             {
                 MessageBox.Show("Chọn dòng cần xóa!");
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("In hóa đơn thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

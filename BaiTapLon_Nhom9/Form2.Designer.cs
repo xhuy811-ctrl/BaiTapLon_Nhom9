@@ -267,7 +267,6 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(124, 20);
             this.textBox2.TabIndex = 17;
-            this.textBox2.Text = "Nhập tên sinh viên";
             // 
             // textBox1
             // 
@@ -277,7 +276,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(124, 20);
             this.textBox1.TabIndex = 18;
-            this.textBox1.Text = "nhập mã sinh viên";
             // 
             // label3
             // 
@@ -1247,9 +1245,9 @@
             this.label26.Location = new System.Drawing.Point(32, 41);
             this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(55, 13);
+            this.label26.Size = new System.Drawing.Size(53, 13);
             this.label26.TabIndex = 30;
-            this.label26.Text = "Mã phòng";
+            this.label26.Text = "Số phòng";
             // 
             // label27
             // 
@@ -1607,6 +1605,7 @@
             this.button2.TabIndex = 7;
             this.button2.Text = "In hóa đơn";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button4
             // 
