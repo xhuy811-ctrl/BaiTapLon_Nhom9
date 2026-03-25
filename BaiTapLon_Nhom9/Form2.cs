@@ -15,6 +15,206 @@ namespace BaiTapLon_Nhom9
         public frmQuanLy()
         {
             InitializeComponent();
+
+            // Gán sự kiện cho nút Sửa/Xóa ở tab Thông tin sinh viên
+            btnSua.Click += btnSua_Click;
+            buttonXoa.Click += buttonXoa_Click;
+
+            // Chọn theo cả dòng để thao tác Sửa/Xóa dễ hơn
+            dgvThongTinSinhVien.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvThongTinSinhVien.MultiSelect = false;
+        }
+
+        private void buttonThem_Click(object sender, EventArgs e)
+        {
+            if (txtMSV.Text.Trim() == "")
+            {
+                MessageBox.Show("Bạn chưa nhập Mã SV!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtMSV.Focus();
+                return;
+            }
+
+            if (txtHoVaTen.Text.Trim() == "")
+            {
+                MessageBox.Show("Bạn chưa nhập Họ và tên!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtHoVaTen.Focus();
+                return;
+            }
+
+            if (!rbNam.Checked && !rbNu.Checked)
+            {
+                MessageBox.Show("Bạn chưa chọn Giới tính!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (cboQue.Text.Trim() == "")
+            {
+                MessageBox.Show("Bạn chưa chọn Quê quán!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cboQue.Focus();
+                return;
+            }
+
+            if (cboKhoa.Text.Trim() == "")
+            {
+                MessageBox.Show("Bạn chưa chọn Khoa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cboKhoa.Focus();
+                return;
+            }
+
+            if (cboLop.Text.Trim() == "")
+            {
+                MessageBox.Show("Bạn chưa chọn Lớp!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cboLop.Focus();
+                return;
+            }
+
+            if (cboPhong.Text.Trim() == "")
+            {
+                MessageBox.Show("Bạn chưa chọn Phòng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cboPhong.Focus();
+                return;
+            }
+
+            if (cboToa.Text.Trim() == "")
+            {
+                MessageBox.Show("Bạn chưa chọn Tòa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cboToa.Focus();
+                return;
+            }
+
+            string gioiTinh;
+            if (rbNam.Checked)
+            {
+                gioiTinh = "Nam";
+            }
+            else
+            {
+                gioiTinh = "Nữ";
+            }
+
+            dgvThongTinSinhVien.Rows.Add(
+                txtMSV.Text.Trim(),
+                txtHoVaTen.Text.Trim(),
+                dtpNgaySinh.Value.ToString("dd/MM/yyyy"),
+                gioiTinh,
+                cboQue.Text.Trim(),
+                cboKhoa.Text.Trim(),
+                cboLop.Text.Trim(),
+                cboPhong.Text.Trim(),
+                cboToa.Text.Trim());
+
+            MessageBox.Show("Thêm sinh viên thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            if (dgvThongTinSinhVien.Rows.Count == 0 ||
+                (dgvThongTinSinhVien.Rows.Count == 1 && dgvThongTinSinhVien.Rows[0].IsNewRow))
+            {
+                MessageBox.Show("Bảng chưa có dữ liệu để sửa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (dgvThongTinSinhVien.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Bạn chưa chọn dòng nào để sửa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (txtMSV.Text.Trim() == "" ||
+                txtHoVaTen.Text.Trim() == "" ||
+                cboQue.Text.Trim() == "" ||
+                cboKhoa.Text.Trim() == "" ||
+                cboLop.Text.Trim() == "" ||
+                cboPhong.Text.Trim() == "" ||
+                cboToa.Text.Trim() == "" ||
+                (!rbNam.Checked && !rbNu.Checked))
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin trước khi sửa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            DataGridViewRow row = dgvThongTinSinhVien.SelectedRows[0];
+            if (row.IsNewRow)
+            {
+                MessageBox.Show("Dòng đang chọn không hợp lệ!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            string gioiTinhMoi;
+            if (rbNam.Checked)
+            {
+                gioiTinhMoi = "Nam";
+            }
+            else
+            {
+                gioiTinhMoi = "Nữ";
+            }
+
+            string ngaySinhMoi = dtpNgaySinh.Value.ToString("dd/MM/yyyy");
+
+            bool khongCoThayDoi =
+                Convert.ToString(row.Cells[0].Value).Trim() == txtMSV.Text.Trim() &&
+                Convert.ToString(row.Cells[1].Value).Trim() == txtHoVaTen.Text.Trim() &&
+                Convert.ToString(row.Cells[2].Value).Trim() == ngaySinhMoi &&
+                Convert.ToString(row.Cells[3].Value).Trim() == gioiTinhMoi &&
+                Convert.ToString(row.Cells[4].Value).Trim() == cboQue.Text.Trim() &&
+                Convert.ToString(row.Cells[5].Value).Trim() == cboKhoa.Text.Trim() &&
+                Convert.ToString(row.Cells[6].Value).Trim() == cboLop.Text.Trim() &&
+                Convert.ToString(row.Cells[7].Value).Trim() == cboPhong.Text.Trim() &&
+                Convert.ToString(row.Cells[8].Value).Trim() == cboToa.Text.Trim();
+
+            if (khongCoThayDoi)
+            {
+                MessageBox.Show("Không có thông tin mới để sửa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            row.Cells[0].Value = txtMSV.Text.Trim();
+            row.Cells[1].Value = txtHoVaTen.Text.Trim();
+            row.Cells[2].Value = ngaySinhMoi;
+            row.Cells[3].Value = gioiTinhMoi;
+            row.Cells[4].Value = cboQue.Text.Trim();
+            row.Cells[5].Value = cboKhoa.Text.Trim();
+            row.Cells[6].Value = cboLop.Text.Trim();
+            row.Cells[7].Value = cboPhong.Text.Trim();
+            row.Cells[8].Value = cboToa.Text.Trim();
+
+            MessageBox.Show("Sửa thông tin sinh viên thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void buttonXoa_Click(object sender, EventArgs e)
+        {
+            if (dgvThongTinSinhVien.Rows.Count == 0 ||
+                (dgvThongTinSinhVien.Rows.Count == 1 && dgvThongTinSinhVien.Rows[0].IsNewRow))
+            {
+                MessageBox.Show("Bảng chưa có dữ liệu để xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (dgvThongTinSinhVien.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Bạn chưa chọn dòng nào để xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            DataGridViewRow row = dgvThongTinSinhVien.SelectedRows[0];
+            if (row.IsNewRow)
+            {
+                MessageBox.Show("Dòng đang chọn không hợp lệ!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa sinh viên này không?",
+                "Xác nhận xóa",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning);
+
+            if (result == DialogResult.Yes)
+            {
+                dgvThongTinSinhVien.Rows.RemoveAt(row.Index);
+                MessageBox.Show("Đã xóa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void btInhd_Click(object sender, EventArgs e)
