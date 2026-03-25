@@ -117,7 +117,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.tpHopDong = new System.Windows.Forms.TabPage();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.txtSoPhong = new System.Windows.Forms.TextBox();
+            this.txtSoPhonghd = new System.Windows.Forms.TextBox();
             this.cboGioiTinh = new System.Windows.Forms.ComboBox();
             this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.label26 = new System.Windows.Forms.Label();
@@ -1304,7 +1304,7 @@
             // 
             // panel10
             // 
-            this.panel10.Controls.Add(this.txtSoPhong);
+            this.panel10.Controls.Add(this.txtSoPhonghd);
             this.panel10.Controls.Add(this.cboGioiTinh);
             this.panel10.Controls.Add(this.dtpNgaySinh);
             this.panel10.Controls.Add(this.label26);
@@ -1326,12 +1326,12 @@
             this.panel10.Size = new System.Drawing.Size(1226, 217);
             this.panel10.TabIndex = 4;
             // 
-            // txtSoPhong
+            // txtSoPhonghd
             // 
-            this.txtSoPhong.Location = new System.Drawing.Point(872, 150);
-            this.txtSoPhong.Name = "txtSoPhong";
-            this.txtSoPhong.Size = new System.Drawing.Size(318, 22);
-            this.txtSoPhong.TabIndex = 51;
+            this.txtSoPhonghd.Location = new System.Drawing.Point(872, 150);
+            this.txtSoPhonghd.Name = "txtSoPhonghd";
+            this.txtSoPhonghd.Size = new System.Drawing.Size(318, 22);
+            this.txtSoPhonghd.TabIndex = 51;
             // 
             // cboGioiTinh
             // 
@@ -2254,7 +2254,7 @@
         private System.Windows.Forms.TextBox txtMaSV;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox txtSoPhong;
+        private System.Windows.Forms.TextBox txtSoPhonghd;
         private System.Windows.Forms.ComboBox cboGioiTinh;
         private System.Windows.Forms.DateTimePicker dtpNgaySinh;
         private System.Windows.Forms.Label label26;

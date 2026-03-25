@@ -52,7 +52,7 @@ namespace BaiTapLon_Nhom9
                 cmd.Parameters.AddWithValue("@TenSV", txtTenSV.Text);
                 cmd.Parameters.AddWithValue("@NgaySinh", dtpNgaySinh.Value);
                 cmd.Parameters.AddWithValue("@GioiTinh", cboGioiTinh.Text);
-                cmd.Parameters.AddWithValue("@SoPhong", txtSoPhong.Text);
+                cmd.Parameters.AddWithValue("@SoPhong", txtSoPhonghd.Text);
                 cmd.Parameters.AddWithValue("@NgayLap", dtpNgayLap.Value);
                 cmd.Parameters.AddWithValue("@NgayHan", dtpNgayHan.Value);
 
@@ -250,7 +250,7 @@ namespace BaiTapLon_Nhom9
                 cmd.Parameters.AddWithValue("@TenSV", txtTenSV.Text);
                 cmd.Parameters.AddWithValue("@NgaySinh", dtpNgaySinh.Value);
                 cmd.Parameters.AddWithValue("@GioiTinh", cboGioiTinh.Text);
-                cmd.Parameters.AddWithValue("@SoPhong", txtSoPhong.Text);
+                cmd.Parameters.AddWithValue("@SoPhong", txtSoPhonghd.Text);
                 cmd.Parameters.AddWithValue("@NgayLap", dtpNgayLap.Value);
                 cmd.Parameters.AddWithValue("@NgayHan", dtpNgayHan.Value);
 
