@@ -1584,7 +1584,7 @@
             // btInhd
             // 
             this.btInhd.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btInhd.BackColor = System.Drawing.Color.DimGray;
+            this.btInhd.BackColor = System.Drawing.Color.Transparent;
             this.btInhd.Location = new System.Drawing.Point(849, 6);
             this.btInhd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btInhd.Name = "btInhd";
@@ -1597,7 +1597,7 @@
             // btXoahd
             // 
             this.btXoahd.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btXoahd.BackColor = System.Drawing.Color.DimGray;
+            this.btXoahd.BackColor = System.Drawing.Color.Transparent;
             this.btXoahd.Location = new System.Drawing.Point(664, 6);
             this.btXoahd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btXoahd.Name = "btXoahd";
@@ -1610,7 +1610,7 @@
             // btSuahd
             // 
             this.btSuahd.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btSuahd.BackColor = System.Drawing.Color.DimGray;
+            this.btSuahd.BackColor = System.Drawing.Color.Transparent;
             this.btSuahd.Location = new System.Drawing.Point(479, 6);
             this.btSuahd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btSuahd.Name = "btSuahd";
@@ -1623,7 +1623,7 @@
             // btThemhd
             // 
             this.btThemhd.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btThemhd.BackColor = System.Drawing.Color.DimGray;
+            this.btThemhd.BackColor = System.Drawing.Color.Transparent;
             this.btThemhd.Location = new System.Drawing.Point(293, 6);
             this.btThemhd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btThemhd.Name = "btThemhd";
